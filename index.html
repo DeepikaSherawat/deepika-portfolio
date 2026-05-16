@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepika Sherawat — AI Developer & Data Scientist</title>
+  <meta name="description" content="Portfolio of Deepika Sherawat — AI Developer and Data Scientist specializing in Generative AI, LLMs, and multi-agent frameworks." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-text">DS</span>
+        <span class="logo-glow"></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="mailto:dsherawat54@gmail.com" class="nav-hire-btn">Hire Me</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Freelancing &amp; Full-Time Opportunities
+      </div>
+
+      <h1 class="hero-name">
+        <span class="name-line">Deepika</span>
+        <span class="name-line gradient-text">Sherawat</span>
+      </h1>
+
+      <p class="hero-title">AI Developer &nbsp;|&nbsp; Data Scientist &nbsp;|&nbsp; Web Developer</p>
+
+      <div class="typewriter-wrapper">
+        <span class="typewriter-prefix">&#9654;&nbsp;</span>
+        <span class="typewriter" id="typewriter"></span>
+        <span class="typewriter-cursor">|</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">LLM</span>
+          <span class="stat-label">Expert</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-label">Get to know me</div>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+
+      <div class="about-grid">
+        <!-- Left Column -->
+        <div class="about-left reveal">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-ring ring-3"></div>
+            <div class="avatar-core">
+              <span class="avatar-initials">DS</span>
+              <div class="avatar-particles"></div>
+            </div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card glass-card">
+              <span class="stat-card-num gradient-text">3+</span>
+              <span class="stat-card-label">Years Experience</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-card-num gradient-text">10+</span>
+              <span class="stat-card-label">Projects Built</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-card-num gradient-text">2</span>
+              <span class="stat-card-label">Companies</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="about-right reveal reveal-delay-1">
+          <h3 class="about-heading">AI Developer &amp; Data Scientist</h3>
+          <p class="about-text">
+            AI Developer and Data Scientist with <strong>3+ years of experience</strong> building intelligent systems using Generative AI, LLMs, and multi-agent frameworks. Currently developing an end-to-end AI-powered Hiring Bot at <strong>Neo Sypher Systems Pvt Ltd</strong>, Delhi.
+          </p>
+          <p class="about-text">
+            Proficient in <strong>Python, LangChain, OpenAI APIs</strong>, and cloud platforms (AWS, Azure). Strong background in NLP, deep learning, and data analytics. Also skilled in <strong>React.js and full-stack web development</strong> — having built and deployed multiple live business websites. Passionate about creating scalable AI solutions and web applications that drive real business impact.
+          </p>
+
+          <div class="contact-cards">
+            <a href="mailto:dsherawat54@gmail.com" class="contact-card glass-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">dsherawat54@gmail.com</span>
+              </div>
+            </a>
+
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Gurgaon, Haryana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       SKILLS SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label">What I work with</div>
+      <h2 class="section-title">Technical <span class="gradient-text">Arsenal</span></h2>
+
+      <div class="skills-grid">
+        <!-- Skill Bars -->
+        <div class="skill-bars reveal">
+          <h3 class="skills-sub-title">Core Proficiency</h3>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Python</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="95"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">LangChain / AI Frameworks</span>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="92"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">SQL</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Machine Learning / Deep Learning</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">AWS / Azure Cloud</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Power BI</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">NLP</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">React.js / Web Development</span>
+              <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="78"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Generative AI / LLMs</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Prompt Engineering</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Frameworks -->
+        <div class="tools-cloud reveal reveal-delay-1">
+          <h3 class="skills-sub-title">Tools &amp; Frameworks</h3>
+          <div class="tools-grid">
+            <!-- Generative AI & LLMs -->
+            <span class="tool-tag" data-category="ai">LangChain</span>
+            <span class="tool-tag" data-category="ai">LangGraph</span>
+            <span class="tool-tag" data-category="ai">CrewAI</span>
+            <span class="tool-tag" data-category="ai">OpenAI API</span>
+            <span class="tool-tag" data-category="ai">RAG</span>
+            <span class="tool-tag" data-category="ai">Agentic AI</span>
+            <span class="tool-tag" data-category="ai">Hugging Face</span>
+            <span class="tool-tag" data-category="ai">Fine-tuning</span>
+            <span class="tool-tag" data-category="ai">Prompt Engineering</span>
+            <span class="tool-tag" data-category="ai">LlamaIndex</span>
+            <span class="tool-tag" data-category="ai">Vector Databases</span>
+            <span class="tool-tag" data-category="ai">FAISS</span>
+            <span class="tool-tag" data-category="ai">Pinecone</span>
+            <span class="tool-tag" data-category="ai">AutoGen</span>
+            <!-- Deep Learning & ML -->
+            <span class="tool-tag" data-category="dl">TensorFlow</span>
+            <span class="tool-tag" data-category="dl">Keras</span>
+            <span class="tool-tag" data-category="dl">PyTorch</span>
+            <span class="tool-tag" data-category="ml">Scikit-Learn</span>
+            <span class="tool-tag" data-category="ml">XGBoost</span>
+            <span class="tool-tag" data-category="ml">MLflow</span>
+            <span class="tool-tag" data-category="ml">Feature Engineering</span>
+            <span class="tool-tag" data-category="ml">Model Deployment</span>
+            <span class="tool-tag" data-category="nlp">NLTK</span>
+            <span class="tool-tag" data-category="nlp">Transformers</span>
+            <span class="tool-tag" data-category="nlp">spaCy</span>
+            <span class="tool-tag" data-category="nlp">BERT</span>
+            <span class="tool-tag" data-category="cv">OpenCV</span>
+            <!-- Cloud & DevOps -->
+            <span class="tool-tag" data-category="cloud">AWS SageMaker</span>
+            <span class="tool-tag" data-category="cloud">AWS Lambda</span>
+            <span class="tool-tag" data-category="cloud">AWS S3</span>
+            <span class="tool-tag" data-category="cloud">Azure</span>
+            <span class="tool-tag" data-category="cloud">Docker</span>
+            <span class="tool-tag" data-category="cloud">FastAPI</span>
+            <span class="tool-tag" data-category="web">Flask</span>
+            <span class="tool-tag" data-category="web">Streamlit</span>
+            <!-- Data & Viz -->
+            <span class="tool-tag" data-category="data">NumPy</span>
+            <span class="tool-tag" data-category="data">Pandas</span>
+            <span class="tool-tag" data-category="data">PySpark</span>
+            <span class="tool-tag" data-category="viz">Tableau</span>
+            <span class="tool-tag" data-category="viz">Power BI</span>
+            <span class="tool-tag" data-category="viz">Matplotlib</span>
+            <span class="tool-tag" data-category="viz">Seaborn</span>
+            <span class="tool-tag" data-category="dev">Git</span>
+            <span class="tool-tag" data-category="data">Excel</span>
+            <!-- Web Development -->
+            <span class="tool-tag" data-category="web">React.js</span>
+            <span class="tool-tag" data-category="web">HTML5</span>
+            <span class="tool-tag" data-category="web">CSS3</span>
+            <span class="tool-tag" data-category="web">JavaScript</span>
+            <span class="tool-tag" data-category="web">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       EXPERIENCE SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-label">Career journey</div>
+      <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+
+      <div class="timeline">
+        <!-- Timeline line -->
+        <div class="timeline-line"></div>
+
+        <!-- Experience 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <div class="dot-inner"></div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div class="company-logo logo-ns">NS</div>
+              <div class="timeline-meta">
+                <h3 class="timeline-role">AI Developer</h3>
+                <p class="timeline-company">Neo Sypher Systems Pvt Ltd, Delhi</p>
+                <span class="timeline-date">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="date-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Feb 2026 – Present
+                </span>
+              </div>
+              <div class="timeline-badge current">Current</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developing end-to-end AI-powered Hiring Bot automating full recruitment pipeline using LangChain, OpenAI APIs, and multi-agent AI frameworks</li>
+              <li>Built intelligent resume parser to extract, evaluate, and rank candidate profiles</li>
+              <li>Implemented AI-generated, role-specific interview questions and MCQ assessments using LLM-based prompt engineering</li>
+              <li>Developed automated interview scheduling system integrated with calendar APIs</li>
+              <li>Integrated personality assessment modules giving recruiters deeper behavioral insights</li>
+              <li>Designed multi-agent workflows for end-to-end hiring automation</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="mini-tag">LangChain</span>
+              <span class="mini-tag">OpenAI API</span>
+              <span class="mini-tag">Multi-Agent</span>
+              <span class="mini-tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot">
+            <div class="dot-inner"></div>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div class="company-logo logo-si">SI</div>
+              <div class="timeline-meta">
+                <h3 class="timeline-role">Jr. Data Scientist</h3>
+                <p class="timeline-company">Softzon Infotech</p>
+                <span class="timeline-date">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="date-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  3 Years
+                </span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed and deployed ML models using Scikit-Learn, TensorFlow, Keras, and PyTorch</li>
+              <li>Built and maintained scalable data pipelines on AWS and Azure cloud platforms</li>
+              <li>Designed interactive dashboards in Power BI and Tableau for business intelligence</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="mini-tag">TensorFlow</span>
+              <span class="mini-tag">AWS</span>
+              <span class="mini-tag">Azure</span>
+              <span class="mini-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       PROJECTS SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-label">What I've built</div>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      <div class="projects-stat-badge">10+ Projects Built</div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-number">01</div>
+          <div class="project-glow"></div>
+          <div class="project-icon project-icon-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="project-title">AI-Powered Hiring Bot</h3>
+          <div class="project-tech">
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">AI Agents</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">REST APIs</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Full-cycle hiring automation: resume parsing, AI interview Q&amp;A, MCQ generation, scheduling &amp; personality assessment</li>
+            <li>Multi-agent architecture handles parallel workflows across different recruitment stages</li>
+          </ul>
+          <a href="mailto:dsherawat54@gmail.com?subject=Request Case Study&body=Hi Deepika, I'd love to learn more about this project. Could you share a case study?" class="project-btn">
+            Request Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal reveal-delay-1">
+          <div class="project-number">02</div>
+          <div class="project-glow"></div>
+          <div class="project-icon project-icon-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3 class="project-title">Multi-Agent AI Customer Support Chatbot</h3>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Transformers</span>
+            <span class="tech-tag">LLMs</span>
+            <span class="tech-tag">TF-IDF</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Multi-agent chatbot classifying, routing, and responding to multilingual support tickets</li>
+            <li>LLM-based contextual response generation for human-like automated replies</li>
+          </ul>
+          <a href="mailto:dsherawat54@gmail.com?subject=Request Case Study&body=Hi Deepika, I'd love to learn more about this project. Could you share a case study?" class="project-btn">
+            Request Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal reveal-delay-2">
+          <div class="project-number">03</div>
+          <div class="project-glow"></div>
+          <div class="project-icon project-icon-3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="project-title">Brain Tumor Diagnosis &amp; Treatment Prediction</h3>
+          <div class="project-tech">
+            <span class="tech-tag">Deep Learning</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">3D MRI</span>
+          </div>
+          <ul class="project-bullets">
+            <li>AI system for brain tumor detection achieving <strong>90%+ accuracy</strong>; Dice Coefficient: 0.85, AUC-ROC: 0.92</li>
+            <li>Flask web app with interactive dashboards and PDF clinical reports for doctors</li>
+          </ul>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">90%+</span><span class="metric-lbl">Accuracy</span></div>
+            <div class="metric"><span class="metric-val">0.85</span><span class="metric-lbl">Dice Coeff.</span></div>
+            <div class="metric"><span class="metric-val">0.92</span><span class="metric-lbl">AUC-ROC</span></div>
+          </div>
+          <a href="mailto:dsherawat54@gmail.com?subject=Request Case Study&body=Hi Deepika, I'd love to learn more about this project. Could you share a case study?" class="project-btn">
+            Request Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-card reveal reveal-delay-3">
+          <div class="project-number">04</div>
+          <div class="project-glow"></div>
+          <div class="project-icon project-icon-4">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="project-title">Telecom Customer Churn Prediction</h3>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">PCA</span>
+            <span class="tech-tag">SVM</span>
+            <span class="tech-tag">Ensemble</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Predictive models (Logistic Regression, Random Forest) forecasting churn with <strong>85% accuracy</strong></li>
+            <li>Retention strategy design improved customer retention by <strong>15%</strong></li>
+          </ul>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">85%</span><span class="metric-lbl">Accuracy</span></div>
+            <div class="metric"><span class="metric-val">+15%</span><span class="metric-lbl">Retention</span></div>
+          </div>
+          <a href="mailto:dsherawat54@gmail.com?subject=Request Case Study&body=Hi Deepika, I'd love to learn more about this project. Could you share a case study?" class="project-btn">
+            Request Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-number">05</div>
+          <div class="project-glow"></div>
+          <div class="project-icon project-icon-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3 class="project-title">Nine Nodes Tech — Corporate Website</h3>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Designed and developed the full corporate website for Nine Nodes Tech from scratch</li>
+            <li>Responsive, modern UI with smooth animations and professional branding</li>
+          </ul>
+          <a href="https://ninenodestech.com" target="_blank" rel="noopener noreferrer" class="project-btn">
+            Visit Website
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card glass-card reveal reveal-delay-1">
+          <div class="project-number">06</div>
+          <div class="project-glow"></div>
+          <div class="project-icon project-icon-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3 class="project-title">9 Nodes Media — Digital Media Website</h3>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Built the complete digital media website for 9 Nodes Media with dynamic content sections</li>
+            <li>Clean, engaging layout with focus on brand identity and user experience</li>
+          </ul>
+          <a href="https://9nodesmedia.com" target="_blank" rel="noopener noreferrer" class="project-btn">
+            Visit Website
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card glass-card reveal reveal-delay-2">
+          <div class="project-number">07</div>
+          <div class="project-glow"></div>
+          <div class="project-icon project-icon-3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3 class="project-title">NSSP India — Business Website</h3>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Developed the official business website for NSSP India with full responsive design</li>
+            <li>Professional layout with service showcases, contact forms and smooth navigation</li>
+          </ul>
+          <a href="https://nssplindia.com" target="_blank" rel="noopener noreferrer" class="project-btn">
+            Visit Website
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       EDUCATION SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-label">Academic background</div>
+      <h2 class="section-title">Education &amp; <span class="gradient-text">Certifications</span></h2>
+
+      <div class="education-grid">
+
+        <div class="edu-card glass-card reveal">
+          <div class="edu-icon edu-icon-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-badge">Professional</div>
+          <h3 class="edu-degree">Full Stack DS &amp; AI (IBM)</h3>
+          <p class="edu-institution">ExcelR, Bangalore</p>
+          <div class="edu-bar"></div>
+          <p class="edu-desc">Comprehensive program covering Data Science, AI, Machine Learning, and industry-standard tools with IBM certification.</p>
+        </div>
+
+        <div class="edu-card glass-card reveal reveal-delay-1">
+          <div class="edu-icon edu-icon-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="edu-badge">Post Graduate</div>
+          <h3 class="edu-degree">M.Sc. Physics</h3>
+          <p class="edu-institution">BMU Rohtak</p>
+          <div class="edu-bar"></div>
+          <p class="edu-desc">Master of Science in Physics, providing strong analytical and quantitative foundations for data-driven problem solving.</p>
+        </div>
+
+        <div class="edu-card glass-card reveal reveal-delay-2">
+          <div class="edu-icon edu-icon-3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          </div>
+          <div class="edu-badge">Under Graduate</div>
+          <h3 class="edu-degree">B.Sc. Non-Medical</h3>
+          <p class="edu-institution">MDU Rohtak</p>
+          <div class="edu-bar"></div>
+          <p class="edu-desc">Bachelor of Science with Non-Medical stream, building a rigorous foundation in Mathematics, Physics, and Chemistry.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">Let's connect</div>
+      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+
+      <p class="contact-intro reveal">
+        Open to <strong>Freelancing Projects</strong> and <strong>Full-Time Roles</strong> in AI/ML. Whether you have a short-term project or a permanent position, I'd love to connect.
+      </p>
+
+      <div class="contact-grid reveal reveal-delay-1">
+
+        <a href="mailto:dsherawat54@gmail.com" class="ccontact-card glass-card">
+          <div class="ccontact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3 class="ccontact-title">Email Me</h3>
+          <p class="ccontact-value">dsherawat54@gmail.com</p>
+          <span class="ccontact-cta">Send a message →</span>
+        </a>
+
+
+        <div class="ccontact-card glass-card no-link">
+          <div class="ccontact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="ccontact-title">Location</h3>
+          <p class="ccontact-value">Gurgaon, Haryana</p>
+          <span class="ccontact-cta">India 🇮🇳</span>
+        </div>
+
+      </div>
+
+      <div class="social-links reveal reveal-delay-2">
+        <a href="#" class="social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/DeepikaSherawat" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">DS</span>
+      </div>
+      <p class="footer-text">
+        Built with passion by <span class="gradient-text">Deepika Sherawat</span> &copy; 2026
+      </p>
+      <p class="footer-sub">AI Developer &middot; Data Scientist &middot; LLM Engineer</p>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="main.js"></script>
+</body>
+</html>
